@@ -4,7 +4,7 @@ A Whatsapp API writed in python
 
 ### Requisites
 
-You will need Python 3.6 or higher for this bot to run.
+You will need Python 3.6 or higher for this package to run.
 
 > <a href="https://www.python.org/downloads/release/python-360/" target="_blank">Python 3.6+</a>
 
@@ -23,4 +23,8 @@ Step 1.
 Step 2.
 
 > Import them using "from whatsappy import WhatsappAPI"
+
+#Documentation
+
+> <a href="https://github.com/oneXD/whatsappy/wiki/Documentation" target="_blank">Docs+</a>
 
