@@ -26,5 +26,5 @@ Step 2.
 
 # Documentation
 
-> <a href="https://github.com/oneXD/whatsappy/wiki/Documentation" target="_blank">Docs+</a>
+# > <a href="https://github.com/oneXD/whatsappy/wiki/Documentation" target="_blank">Docs</a>
 
