@@ -24,7 +24,7 @@ Step 2.
 
 > Import them using "from whatsappy import WhatsappAPI"
 
-#Documentation
+# Documentation
 
 > <a href="https://github.com/oneXD/whatsappy/wiki/Documentation" target="_blank">Docs+</a>
 
