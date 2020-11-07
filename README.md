@@ -14,8 +14,6 @@ You will need Selenium installed
 
 ### Using
 
-A step by step series of examples that tell you how to get the bot running.
-
 Step 1.
 
 > Drag the file whatsappy.py and chromedriver.exe in your project folder (i will add support for other browsers soon)
