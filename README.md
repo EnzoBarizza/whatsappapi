@@ -26,3 +26,9 @@ Step 2.
 
 > # <a href="https://github.com/oneXD/whatsappy/wiki/Documentation" target="_blank">Docs</a>
 
+
+## Contact
+
+#### DISCORD
+
+> oneXD#6666
