@@ -18,6 +18,10 @@ Step 1.
 
 > Use 'pip3 install whatsappapi'
 
+Step 3.
+
+> Drag chromedriver.exe in the same folder of the project
+
 Step 2.
 
 > Import them using "from whatsappapi import WhatsappAPI"
