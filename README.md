@@ -20,7 +20,7 @@ Step 1.
 
 Step 2.
 
-> Import them using "from whatsappy import WhatsappAPI"
+> Import them using "from whatsappapi import WhatsappAPI"
 
 # Documentation
 
