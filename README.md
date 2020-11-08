@@ -1,4 +1,4 @@
-# Whatsappy
+# WhatsappAPI
 
 A Whatsapp API writed in python
 
@@ -16,7 +16,7 @@ You will need Selenium installed
 
 Step 1.
 
-> Drag the file whatsappy.py and chromedriver.exe in your project folder (i will add support for other browsers soon)
+> Use 'pip3 install whatsappapi'
 
 Step 2.
 
