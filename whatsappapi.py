@@ -1,4 +1,5 @@
 from os import system as cmd
+import os
 from time import sleep as wait
 try:
     from selenium import webdriver
@@ -9,6 +10,10 @@ try:
     from selenium.webdriver.common.by import By
     from selenium.common.exceptions import TimeoutException
     from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+    from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+    from selenium.webdriver.firefox.options import Options
+    import pickle
 
 except ModuleNotFoundError:
     cmd('pip3 install selenium')
@@ -20,16 +25,33 @@ except ModuleNotFoundError:
     from selenium.webdriver.common.by import By
     from selenium.common.exceptions import TimeoutException
     from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+    from selenium.webdriver.firefox.options import Options
+    from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+    import pickle
 
 
-class WhatsappAPI():
+class whatsapp():
 
     @classmethod
-    def setup(self):
-        options = webdriver.ChromeOptions()
-        options.add_argument('--user-data-dir=C:/Users/enzon/AppData/Local/Google/Chrome/User Data/Default')
-        self.driver = webdriver.Chrome(options=options)
-        self.driver.get('https://web.whatsapp.com')
+    def setup(self, browser, headlessmode):
+        userprof = os.environ['USERPROFILE']
+
+        if browser.lower() == 'firefox':
+            options = Options()
+            self.driver = webdriver.Firefox()
+            self.driver.get('https://web.whatsapp.com')
+
+        if browser.lower() == 'chrome':
+            options = webdriver.ChromeOptions()
+            if headlessmode.lower() == 'true':
+                options.add_argument('-headless')
+            else:
+                pass
+            options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36')
+            options.add_argument(f'--user-data-dir={userprof}/AppData/Local/Google/Chrome/User Data/Default')
+            self.driver = webdriver.Chrome(options=options)
+            self.driver.get('https://web.whatsapp.com')
 
     @classmethod
     def find_contact(self, contact):
@@ -322,3 +344,4 @@ class WhatsappAPI():
             wait(0.6)
         except TimeoutException:
             print ("Error")
+
