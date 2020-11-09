@@ -24,7 +24,7 @@ Step 3.
 
 Step 2.
 
-> Import them using "from whatsappapi import WhatsappAPI"
+> Import them using "from whatsappapi import whatsapp"
 
 # Documentation
 
